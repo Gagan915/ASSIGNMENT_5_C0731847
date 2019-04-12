@@ -30,10 +30,10 @@ namespace ASSIGNMENT_5_C0731847
             int x = 0;
             while(Letters[x] != letter)
             {
-                if (Letters[x] == letter) return x;
+                if (Letters[x++] == letter) return x;
             }
-            x++;
-            return -1;
+
+            return x+1;
         }
     }
 }
