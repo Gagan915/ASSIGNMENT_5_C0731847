@@ -9,32 +9,37 @@ namespace ASSIGNMENT_5_C0731847
     //C0731847
     class Program
     {
-        string[] Letters = new string[26] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
-        public static void Main()
+        static void Main(string[] args)
         {
-            Program orange = new Program();
-            Console.WriteLine(orange.Gematria("u"));
-            Console.WriteLine("gg");
+            Program a = new Program();
+            Console.WriteLine("the longest word is: ")
+                 Console.WriteLine(a.MyFunctionA("Ada Lovelac wrote the first algorithm desgned for processing by an Analytical Engine."));
         }
-        public int Gematria(string word)
+        public MyFunctionA(string input)
         {
-            int GematriaValue = 0;
-            for (int i = 0; i < word.Length; i++)
-            {
-                GematriaValue += LetterValue(word[i].ToString());
-            }
-            return GematriaValue;
-        }
-        public int LetterValue(string letter)
-        {
-            int x = 0;
-            while(Letters[x] != letter)
-            {
-                if (Letters[x++] == letter)
-                    return -1;
-            }
+            //Write a C# program to find the longest word in a string.
+            string[] words = input.Split(' ');
 
-            return x+1;
+            int wordArrayLength = words.Length;
+            int[] wordsLength = new int[wordArrayLength];
+
+            foreach (var word in words)
+            {
+                //TODO
+            }
+            //loop post condition: we now have array wordsLength which
+            //contains the lengths of each word
+
+            string currentWord = words[0];
+            string nextWord;
+
+            for (int y = 0; y < words.Length - 1; y++)
+            {
+                currentWord = words[y];
+                nextWord = words[y + 1];
+                //TODO: Use an IF Statement to make sure that variable longestWord
+                // is always set to the Longest Word in th input string
+            }
         }
     }
 }
