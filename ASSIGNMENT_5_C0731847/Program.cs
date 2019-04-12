@@ -14,7 +14,7 @@ namespace ASSIGNMENT_5_C0731847
         {
             Program orange = new Program();
             Console.WriteLine(orange.Gematria("u"));
-
+            Console.WriteLine("gg");
         }
         public int Gematria(string word)
         {
@@ -30,7 +30,8 @@ namespace ASSIGNMENT_5_C0731847
             int x = 0;
             while(Letters[x] != letter)
             {
-                if (Letters[x++] == letter) return x;
+                if (Letters[x++] == letter)
+                    return -1;
             }
 
             return x+1;
