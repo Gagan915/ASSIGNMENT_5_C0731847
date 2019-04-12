@@ -12,9 +12,10 @@ namespace ASSIGNMENT_5_C0731847
         static void Main(string[] args)
         {
             Program a = new Program();
-            Console.WriteLine("the longest word is: ")
-                 Console.WriteLine(a.MyFunctionA("Ada Lovelac wrote the first algorithm desgned for processing by an Analytical Engine."));
+            Console.WriteLine("the longest word is :");
+            Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first algorithm designed processing by an Analytical Engine."));
         }
+
         public MyFunctionA(string input)
         {
             //Write a C# program to find the longest word in a string.
