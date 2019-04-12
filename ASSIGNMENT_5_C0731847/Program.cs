@@ -26,7 +26,7 @@ namespace ASSIGNMENT_5_C0731847
 
             foreach (var word in words)
             {
-                //TODO
+                //TODO//
             }
             //loop post condition: we now have array wordsLength which
             //contains the lengths of each word
